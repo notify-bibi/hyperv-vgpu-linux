@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 
 cat /proc/modules | grep dxgkrnl
 lsmod | grep dxgkrnl

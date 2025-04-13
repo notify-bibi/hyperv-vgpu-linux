@@ -1,10 +1,11 @@
 #!/bin/bash
+set -e
 
 sudo pacman -Sy --needed mesa mesa-utils mesa-d3d12 mesa-utils xorg-xwayland gputest
 
 if modinfo dxgkrnl; then
   echo "dxgkrnl exists, skip install"
-  return
+  exit 0
 fi
 
 git clone https://github.com/notify-bibi/dxgkrnl-dkms-git

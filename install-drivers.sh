@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 
 echo "Moving files and setting permissions..."
 cp -rf /tmp/wsl/libwsl/* /tmp/wsl/lib || :
