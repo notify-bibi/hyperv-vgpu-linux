@@ -12,6 +12,9 @@ ls /dev/dri/card*
 
 export LIBGL_ALWAYS_SOFTWARE=0 GALLIUM_DRIVER=d3d12
 
+
+yay -Sy --needed gputest
+
 gputest &
 
 sleep 5
